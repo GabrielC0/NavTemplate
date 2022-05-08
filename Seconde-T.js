@@ -8,25 +8,24 @@ export default function App() {
     
   return (
       
-
     <View style={{justifyContent:"center"}}>
-        {/* <View className="Header" 
+        <View className="Header" 
         style={{height:50, width:360,borderBottomWidth:1,borderBottomColor:"black",alignItems:"center"}}>
             <Text style={{fontSize:30,marginLeft:5}} Spécificité />  
-        </View> */}
+        </View>
 
-        {/* <View className="Nom de la carte-section"
+        <View className="Nom de la carte-section"
         style={{borderBottomWidth:1,borderBottomColor:"black",marginTop:2,height:100}}>
-            <Text style={{fontSize:15,marginLeft:15,marginTop:15}}>Nom de la carte</Text>  */}
+            <Text style={{fontSize:15,marginLeft:15,marginTop:15}}>Nom de la carte</Text> 
 
 
             {/* <InputState/> */}
-           <Text>`${name}`</Text> 
+           {/* <Text>`${name}`</Text>  */}
 
             
-        {/* </View> */}
+        </View>
 
-        {/* <View className="Point de vie-section"
+        <View className="Point de vie-section"
         style={{borderBottomWidth:1,borderBottomColor:"black",marginTop:2,height:100,
         justifyContent:"space-between",flexDirection:"row"}}>
 
@@ -52,8 +51,7 @@ export default function App() {
                 <View style={{height:45,width:20,borderWidth:1,borderColor:"black",borderLeftWidth:0,marginTop:35,
                 marginRight:65,borderTopRightRadius:5,borderBottomRightRadius:5}}>
 
-                    <TouchableOpacity 
-                    // onClick={<InputState/>} 
+                    <TouchableOpacity  
                     style={{backgroundColor:"grey",width:19,height:43}}>
 
                         <Image
@@ -86,26 +84,43 @@ export default function App() {
                 borderBottomLeftRadius:5}}>
                 </View>
 
-                <View style={{height:45,width:20,borderWidth:1,borderColor:"black",borderLeftWidth:0,
-                borderTopRightRadius:5,borderBottomRightRadius:5}}>
-                    <Image
-                    style={{height:20,width:20,marginTop:10}}
-                    source={require('./Arrow-Down.png')}/>
+                <View style={{height:45,width:20,borderWidth:1,borderColor:"black",borderLeftWidth:0,borderTopRightRadius:5,borderBottomRightRadius:5}}>
+
+                    <TouchableOpacity  
+                    style={{backgroundColor:"grey",width:19,height:43}}>
+
+                        <Image
+                        style={{height:20,width:20,marginTop:10}}
+                        source={require('./Arrow-Down.png')}/>
+
+                    </TouchableOpacity>
                 </View>
 
-                <View style={{width:150,height:45,borderWidth:1,borderColor:"black",borderRadius:5,alignItems:"center",marginLeft:20}}>
-                    <Text style={{fontSize:15,marginTop:10,}}>Nom de l'attaque</Text>
-                </View>
+                
+                <TextInput
+                    style={{width:150,height:45,borderWidth:1,borderColor:"black",borderRadius:5,alignItems:"center",marginLeft:20}}
+                    value={Text}
+                />
+                {/* <Text style={{fontSize:15,marginTop:10,}}>Nom de l'attaque</Text> */}
+                
 
-                <View style={{width:70,height:45,borderWidth:1,borderColor:"black",borderRadius:5,alignItems:"center",marginLeft:20}}>
-                    <Text style={{fontSize:15,marginTop:10,}}>Degats</Text>
-                </View>
+                
+                <TextInput
+                    style={{width:70,height:45,borderWidth:1,borderColor:"black",borderRadius:5,alignItems:"center",marginLeft:20}}
+                    value={Text}
+                />
+                {/* <Text style={{fontSize:15,marginTop:10,}}>Degats</Text> */}
+                
 
             </View>
 
-            <View style={{width:320,height:100,borderWidth:1,borderColor:"black",borderRadius:5,marginLeft:30,marginTop:20}}>
-                <Text style={{fontSize:15,marginTop:10,marginLeft:5}}>Description de l'attaque</Text>
-            </View>
+
+            <TextInput
+                style={{width:320,height:100,borderWidth:1,borderColor:"black",borderRadius:5,marginLeft:30,marginTop:20}}
+                value={Text}
+            />
+            {/* <Text style={{fontSize:15,marginTop:10,marginLeft:5}}>Description de l'attaque</Text> */}
+            
 
         </View>
 
@@ -127,9 +142,16 @@ export default function App() {
 
                 <View style={{height:35,width:20,borderWidth:1,borderColor:"black",borderLeftWidth:0,
                 borderTopRightRadius:5,borderBottomRightRadius:5}}>
-                    <Image
-                    style={{height:20,width:20,marginTop:5}}
-                    source={require('./Arrow-Down.png')}/>
+
+                    <TouchableOpacity  
+                    style={{backgroundColor:"grey",width:19,height:33}}>
+
+                        <Image
+                        style={{height:20,width:20,marginTop:5}}
+                        source={require('./Arrow-Down.png')}/>
+
+                    </TouchableOpacity>
+
                 </View>
                 <Text style={{marginTop:5,marginRight:10}}>x2</Text>
                 
@@ -141,9 +163,14 @@ export default function App() {
 
                 <View style={{height:35,width:20,borderWidth:1,borderColor:"black",borderLeftWidth:0,
                 borderTopRightRadius:5,borderBottomRightRadius:5,marginRight:10}}>
-                    <Image
-                    style={{height:20,width:20,marginTop:5}}
-                    source={require('./Arrow-Down.png')}/>
+                    <TouchableOpacity  
+                    style={{backgroundColor:"grey",width:19,height:33}}>
+
+                        <Image
+                        style={{height:20,width:20,marginTop:5}}
+                        source={require('./Arrow-Down.png')}/>
+
+                    </TouchableOpacity>
                 </View>
                 
                 <View
@@ -154,12 +181,20 @@ export default function App() {
 
                 <View style={{height:35,width:20,borderWidth:1,borderColor:"black",borderLeftWidth:0,
                 borderTopRightRadius:5,borderBottomRightRadius:5,marginRight:10}}>
-                    <Image
-                    style={{height:20,width:20,marginTop:5}}
-                    source={require('./Arrow-Down.png')}/>
+                    <TouchableOpacity  
+                    style={{backgroundColor:"grey",width:19,height:33}}>
+
+                        <Image
+                        style={{height:20,width:20,marginTop:5}}
+                        source={require('./Arrow-Down.png')}/>
+
+                    </TouchableOpacity>
                 </View>
             </View>
-        </View> */}
+
+
+
+        </View>
 
     </View>
 
