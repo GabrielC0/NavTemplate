@@ -30,11 +30,11 @@ export default function App() {
         justifyContent:"space-between",flexDirection:"row"}}>
 
             <Text style={{fontSize:15,marginLeft:15,marginTop:15}}>Point de vie</Text> 
-  
-            <Text style={{fontSize:10,marginTop:60,marginLeft:115}}>P.V</Text>
+
             <TextInput
             style={{height:30,width:60,borderWidth:1,borderColor:"black",marginRight:70,marginTop:50,borderRadius:5}}
             value={Text}
+            placeholder="     P.V"
             />
             
         </View>
@@ -100,6 +100,7 @@ export default function App() {
                 <TextInput
                     style={{width:150,height:45,borderWidth:1,borderColor:"black",borderRadius:5,alignItems:"center",marginLeft:20}}
                     value={Text}
+                    placeholder=" Nom de l'attaque"
                 />
                 {/* <Text style={{fontSize:15,marginTop:10,}}>Nom de l'attaque</Text> */}
                 
@@ -108,6 +109,7 @@ export default function App() {
                 <TextInput
                     style={{width:70,height:45,borderWidth:1,borderColor:"black",borderRadius:5,alignItems:"center",marginLeft:20}}
                     value={Text}
+                    placeholder=" Nombre de degats"
                 />
                 {/* <Text style={{fontSize:15,marginTop:10,}}>Degats</Text> */}
                 
@@ -118,6 +120,7 @@ export default function App() {
             <TextInput
                 style={{width:320,height:100,borderWidth:1,borderColor:"black",borderRadius:5,marginLeft:30,marginTop:20}}
                 value={Text}
+                placeholder=" Description"
             />
             {/* <Text style={{fontSize:15,marginTop:10,marginLeft:5}}>Description de l'attaque</Text> */}
             
@@ -200,4 +203,3 @@ export default function App() {
 
   );
 }
-
